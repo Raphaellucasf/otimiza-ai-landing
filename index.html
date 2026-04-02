@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otimiza-AI — Soluções Tecnológicas que Transformam Negócios</title>
+    <meta name="description" content="Automação inteligente para WhatsApp, Instagram, Facebook e muito mais. Conheça Meritus, Otimiza Foods e Otimiza Clínicas.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">OTIMIZA<span>-AI</span></div>
+        <div class="loading-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#home" class="header-logo">OTIMIZA<span>-AI</span></a>
+
+                <nav class="header-nav">
+                    <a href="#home">Home</a>
+                    <a href="#solutions">Soluções</a>
+                    <a href="#divisions">Divisões</a>
+                    <a href="#process">Como Funciona</a>
+                    <a href="#contact">Contato</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn-enter" id="enterBtn">
+                        <span>Entrar</span>
+                        <i class="fas fa-chevron-down" style="font-size: 0.65rem;"></i>
+                    </button>
+
+                    <div class="system-dropdown" id="systemDropdown">
+                        <div class="dropdown-header">
+                            <h4>Escolha seu Sistema</h4>
+                        </div>
+                        <a href="https://meritus.otimiza-ai.com/" target="_blank" class="dropdown-item">
+                            <div class="dropdown-icon meritus"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-info">
+                                <h5>Meritus</h5>
+                                <p>Sistema Jurídico</p>
+                            </div>
+                        </a>
+                        <a href="https://food.otimiza-ai.com/" target="_blank" class="dropdown-item">
+                            <div class="dropdown-icon food"><i class="fas fa-utensils"></i></div>
+                            <div class="dropdown-info">
+                                <h5>Otimiza Foods</h5>
+                                <p>Gestão de Food Service</p>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item" style="opacity: 0.5; pointer-events: none;">
+                            <div class="dropdown-icon clinicas"><i class="fas fa-heartbeat"></i></div>
+                            <div class="dropdown-info">
+                                <h5>Otimiza Clínicas</h5>
+                                <p>Em breve</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#home">Home</a>
+        <a href="#solutions">Soluções</a>
+        <a href="#divisions">Divisões</a>
+        <a href="#process">Como Funciona</a>
+        <a href="#contact">Contato</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particle-canvas"></canvas>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-bolt"></i>
+                Soluções Tecnológicas Inteligentes
+            </div>
+
+            <h1 class="hero-title">
+                Transformamos
+                <span class="highlight">Negócios</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Automação inteligente para WhatsApp, Instagram, Facebook, robôs de automação, softwares e muito mais. Sua operação mais eficiente, hoje.
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#solutions" class="btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Descubra Nossas Soluções
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-play"></i>
+                    Falar Conosco
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Brand Statement -->
+    <section class="brand-statement">
+        <div class="container">
+            <p class="statement-text reveal">
+                <strong>Otimizamos</strong> processos, <em>automatizamos</em> operações e <strong>transformamos</strong> a forma como empresas se conectam com seus clientes — usando <em>inteligência artificial</em> e tecnologia de ponta.
+            </p>
+        </div>
+    </section>
+
+    <!-- Marquee SVG Curvo -->
+    <section class="marquee-section" aria-hidden="true">
+        <div class="marquee-inner">
+            <svg class="marquee-bg-svg" viewBox="0 0 1512 200" preserveAspectRatio="none">
+                <path stroke="var(--color-primary)" stroke-width="100" stroke-linecap="round"
+                    d="M-71 160 Q 350 30 756 100 Q 1100 170 1583 60" fill="none" opacity="0.05"/>
+            </svg>
+            <svg class="marquee-text-svg" viewBox="0 0 1512 200" preserveAspectRatio="none">
+                <defs>
+                    <path id="marquee-curve" d="M-71 160 Q 350 30 756 100 Q 1100 170 1583 60"/>
+                </defs>
+                <text fill="var(--color-primary)" font-size="13" font-family="Space Grotesk, sans-serif" font-weight="600" opacity="0.45" letter-spacing="5">
+                    <textPath href="#marquee-curve" startOffset="20%">
+                        OTIMIZA-AI &nbsp;&nbsp;&middot;&nbsp;&nbsp; AUTOMAÇÃO INTELIGENTE &nbsp;&nbsp;&middot;&nbsp;&nbsp; TRANSFORMAMOS NEGÓCIOS &nbsp;&nbsp;&middot;&nbsp;&nbsp; OTIMIZA-AI &nbsp;&nbsp;&middot;&nbsp;&nbsp; AUTOMAÇÃO INTELIGENTE &nbsp;&nbsp;&middot;&nbsp;&nbsp; TRANSFORMAMOS NEGÓCIOS &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="solutions">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">O que fazemos</span>
+                <h2 class="section-title">Nossas <span class="text-gradient-cyan">Soluções</span></h2>
+                <p class="section-subtitle">Tecnologia sob medida para cada desafio do seu negócio</p>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card reveal stagger-1">
+                    <div class="bento-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp Business</h3>
+                    <p>Automação e otimização de conversas, atendimento ao cliente e vendas pelo WhatsApp. Chatbots inteligentes, respostas automáticas e gestão de leads em escala.</p>
+                </div>
+
+                <div class="bento-card reveal stagger-2">
+                    <div class="bento-icon"><i class="fab fa-instagram"></i></div>
+                    <h3>Instagram Growth</h3>
+                    <p>Estratégias e automação para crescimento orgânico e engajamento no Instagram.</p>
+                </div>
+
+                <div class="bento-card reveal stagger-3">
+                    <div class="bento-icon"><i class="fab fa-facebook"></i></div>
+                    <h3>Facebook Ads</h3>
+                    <p>Gestão inteligente de campanhas, públicos e otimização de resultados.</p>
+                </div>
+
+                <div class="bento-card reveal stagger-4">
+                    <div class="bento-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Robôs de Automação</h3>
+                    <p>Bots inteligentes para automatizar processos repetitivos e ganhar escala em qualquer operação.</p>
+                </div>
+
+                <div class="bento-card reveal stagger-5">
+                    <div class="bento-icon"><i class="fas fa-code"></i></div>
+                    <h3>Software Sob Medida</h3>
+                    <p>Desenvolvimento de soluções tecnológicas personalizadas para seu negócio. Sistemas web, aplicativos, dashboards e integrações que se adaptam à sua realidade.</p>
+                </div>
+
+                <div class="bento-card reveal stagger-6">
+                    <div class="bento-icon"><i class="fas fa-plug"></i></div>
+                    <h3>Integrações API</h3>
+                    <p>Conectamos seus sistemas com APIs robustas e escaláveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisions Section -->
+    <section class="divisions-section" id="divisions">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Ecossistema</span>
+                <h2 class="section-title">Nossas <span class="text-gradient-accent">Divisões</span></h2>
+                <p class="section-subtitle">Plataformas especializadas para diferentes segmentos</p>
+            </div>
+
+            <!-- Meritus -->
+            <div class="division-block reveal-left">
+                <div class="division-visual">
+                    <img src="https://images.pexels.com/photos/6077114/pexels-photo-6077114.jpeg" alt="Sistema jurídico Meritus - Tecnologia para advocacia" loading="lazy">
+                    <div class="division-visual-overlay">
+                        <span class="division-visual-badge meritus">
+                            <i class="fas fa-balance-scale"></i> Sistema Ativo
+                        </span>
+                    </div>
+                </div>
+                <div class="division-content">
+                    <span class="division-tag meritus">Otimiza-AI Meritus</span>
+                    <h3 class="division-title">Meritus</h3>
+                    <p class="division-description">Sistema jurídico completo com IA para gestão de escritórios de advocacia. Organize processos, automatize tarefas e tenha inteligência jurídica na palma da mão.</p>
+                    <ul class="division-features meritus">
+                        <li><i class="fas fa-check"></i> Gestão de processos</li>
+                        <li><i class="fas fa-check"></i> Automação de tarefas</li>
+                        <li><i class="fas fa-check"></i> Inteligência jurídica com IA</li>
+                    </ul>
+                    <a href="https://meritus.otimiza-ai.com/" target="_blank" class="btn-division meritus">
+                        Acessar Meritus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Foods -->
+            <div class="division-block reversed reveal-right">
+                <div class="division-visual">
+                    <img src="https://images.pexels.com/photos/12935078/pexels-photo-12935078.jpeg" alt="Otimiza Foods - Cardápio digital e gestão de food service" loading="lazy">
+                    <div class="division-visual-overlay">
+                        <span class="division-visual-badge food">
+                            <i class="fas fa-utensils"></i> Sistema Ativo
+                        </span>
+                    </div>
+                </div>
+                <div class="division-content">
+                    <span class="division-tag food">Otimiza-AI Food</span>
+                    <h3 class="division-title">Otimiza Foods</h3>
+                    <p class="division-description">Cardápios digitais, gestão de pedidos e automação completa para food service. Hospedamos seus cardápios e integramos com delivery.</p>
+                    <ul class="division-features food">
+                        <li><i class="fas fa-check"></i> Cardápio digital personalizado</li>
+                        <li><i class="fas fa-check"></i> Gestão de pedidos</li>
+                        <li><i class="fas fa-check"></i> Integração com delivery</li>
+                    </ul>
+                    <a href="https://food.otimiza-ai.com/" target="_blank" class="btn-division food">
+                        Acessar Foods <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clínicas -->
+            <div class="division-block reveal-left">
+                <div class="division-visual">
+                    <img src="https://images.unsplash.com/photo-1758691461888-b74515208d7a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwyfHxtZWRpY2FsJTIwY2xpbmljJTIwbW9kZXJuJTIwdGVjaG5vbG9neSUyMGhlYWx0aGNhcmV8ZW58MHwwfHx8MTc3NDI4NDI4NHww&ixlib=rb-4.1.0&q=85" alt="Otimiza Clínicas - Gestão para clínicas e consultórios" loading="lazy">
+                    <div class="division-visual-overlay">
+                        <span class="division-visual-badge clinicas">
+                            <i class="fas fa-heartbeat"></i> Em Breve
+                        </span>
+                    </div>
+                </div>
+                <div class="division-content">
+                    <span class="division-tag clinicas">Otimiza-AI Clínicas</span>
+                    <h3 class="division-title">Otimiza Clínicas</h3>
+                    <p class="division-description">Agendamento inteligente e gestão completa para clínicas e consultórios. Prontuário digital, gestão de pacientes e automação de atendimento.</p>
+                    <ul class="division-features clinicas">
+                        <li><i class="fas fa-check"></i> Agendamento online</li>
+                        <li><i class="fas fa-check"></i> Gestão de pacientes</li>
+                        <li><i class="fas fa-check"></i> Prontuário digital</li>
+                    </ul>
+                    <span class="btn-division disabled">
+                        Em Breve <i class="fas fa-clock"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Processo</span>
+                <h2 class="section-title">Como <span class="text-gradient-purple">Funciona</span></h2>
+                <p class="section-subtitle">Três passos para transformar seu negócio</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step reveal stagger-1">
+                    <div class="process-number">01</div>
+                    <h3>Análise</h3>
+                    <p>Analisamos seu negócio e identificamos oportunidades de otimização e automação.</p>
+                </div>
+
+                <div class="process-step reveal stagger-2">
+                    <div class="process-number">02</div>
+                    <h3>Otimização</h3>
+                    <p>Implementamos soluções de automação e inteligência artificial personalizadas.</p>
+                </div>
+
+                <div class="process-step reveal stagger-3">
+                    <div class="process-number">03</div>
+                    <h3>Resultados</h3>
+                    <p>Seu negócio operando com mais eficiência, menos custos e mais lucro.</p>
+                </div>
+            </div>
+
+            <!-- SVG Path Draw -->
+            <div class="process-svg-line" aria-hidden="true">
+                <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+                    <path d="M 0 40 Q 200 5 400 40 Q 600 75 800 40 Q 1000 5 1200 40"
+                        fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 class="cta-title">Pronto para <span class="text-gradient-cyan">Transformar</span> seu Negócio?</h2>
+                <p class="cta-subtitle">Entre em contato e descubra como podemos otimizar sua operação com tecnologia de ponta.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5511982883630" target="_blank" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        Falar pelo WhatsApp
+                    </a>
+                    <button class="btn-secondary" id="demoBtnOpen" onclick="openDemoModal()">
+                        <i class="fas fa-calendar-alt"></i>
+                        Agendar Demonstração
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>OTIMIZA<span>-AI</span></h3>
+                    <p>Transformando negócios com inteligência artificial e automação. Soluções tecnológicas para WhatsApp, redes sociais e sistemas empresariais.</p>
+                    <div class="footer-social" style="margin-top: 1.5rem;">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#solutions">Soluções</a></li>
+                        <li><a href="#divisions">Divisões</a></li>
+                        <li><a href="#process">Como Funciona</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Divisões</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://meritus.otimiza-ai.com/" target="_blank">Meritus</a></li>
+                        <li><a href="https://food.otimiza-ai.com/" target="_blank">Otimiza Foods</a></li>
+                        <li><a href="#">Otimiza Clínicas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Soluções</h4>
+                    <ul class="footer-links">
+                        <li><a href="#solutions">WhatsApp Business</a></li>
+                        <li><a href="#solutions">Instagram Growth</a></li>
+                        <li><a href="#solutions">Facebook Ads</a></li>
+                        <li><a href="#solutions">Automação</a></li>
+                        <li><a href="#solutions">Software</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otimiza-AI. Todos os direitos reservados.</p>
+                <p style="color: var(--color-text-muted); font-size: 0.75rem;">Soluções tecnológicas inteligentes</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal" aria-hidden="true" role="dialog" aria-labelledby="demoModalTitle">
+        <div class="demo-modal-backdrop" id="demoModalBackdrop"></div>
+        <div class="demo-modal-box">
+            <button class="demo-modal-close" id="demoModalClose" aria-label="Fechar">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="demo-modal-header">
+                <span class="demo-modal-tag"><i class="fas fa-calendar-alt"></i> Demonstração Gratuita</span>
+                <h3 id="demoModalTitle">Agende sua Demonstração</h3>
+                <p>Preencha os dados e entraremos em contato em até 24h.</p>
+            </div>
+            <form id="demoForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="f-company">Nome da Empresa *</label>
+                        <input type="text" id="f-company" name="empresa" required placeholder="Ex: Empresa LTDA">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-name">Responsável *</label>
+                        <input type="text" id="f-name" name="responsavel" required placeholder="Seu nome completo">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="f-email">E-mail *</label>
+                        <input type="email" id="f-email" name="email" required placeholder="contato@empresa.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-phone">WhatsApp *</label>
+                        <input type="tel" id="f-phone" name="telefone" required placeholder="(11) 99999-9999">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="f-segment">Segmento da Empresa</label>
+                    <select id="f-segment" name="segmento">
+                        <option value="Não informado">Selecione o segmento...</option>
+                        <option value="Advocacia / Jurídico">Advocacia / Jurídico</option>
+                        <option value="Food Service">Food Service</option>
+                        <option value="Clínica / Saúde">Clínica / Saúde</option>
+                        <option value="Varejo / Comércio">Varejo / Comércio</option>
+                        <option value="Serviços">Serviços</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="f-message">Mensagem (opcional)</label>
+                    <textarea id="f-message" name="mensagem" rows="3" placeholder="Descreva brevemente o que você precisa..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit-demo">
+                    <i class="fas fa-paper-plane"></i>
+                    Enviar Solicitação
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- GSAP + ScrollTrigger + SplitType -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js?v=3"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
